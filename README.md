@@ -8,8 +8,7 @@ The yotta Docker image
 
 ### Build the docker image
 
-The helper script ```docker-build``` will create you image. You can pass any extra docker commands into the helper such as ```no-cache```.
-
+The helper script ```docker-build``` will create you image. You can pass any extra docker commands into the helper such as ```--no-cache```.
 
 ```
 ./docker-build.sh <docker-commands>

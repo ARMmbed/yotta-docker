@@ -34,9 +34,3 @@ RUN apt-get -y install python-dev libffi-dev libssl-dev libxml2-dev
 # ------------------------------------------------------------------------------
 # Install yotta
 RUN pip install -U pyopenssl ndg-httpsclient pyasn1 requests yotta
-
-# ------------------------------------------------------------------------------
-# Clean up
-RUN apt-get -y purge python-dev libffi-dev libssl-dev libxml2-dev && \
-	apt-get -y autoremove && \
-	apt-get -y clean
