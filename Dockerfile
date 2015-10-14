@@ -28,7 +28,7 @@ RUN apt-get -y install python python-setuptools python-usb && \
 	easy_install pip
 
 # ------------------------------------------------------------------------------
-# Install development requirements
+# Install python build requirements
 RUN apt-get -y install python-dev libffi-dev libssl-dev libxml2-dev
 
 # ------------------------------------------------------------------------------

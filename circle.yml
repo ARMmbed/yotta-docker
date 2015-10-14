@@ -1,0 +1,23 @@
+machine:
+  services:
+    - docker
+  environment:
+    MBED_BUILD: mbed/yotta
+    MBED_BUILD_TAG: $MBED_BUILD:cc-`echo $CIRCLE_BRANCH|sed 's/\//-/'`-`echo $CIRCLE_BUILD_NUM`
+
+dependencies:
+  override:
+    - sed "s/<EMAIL>/$DOCKER_EMAIL/;s/<AUTH>/$DOCKER_AUTH/" < dockercfg.template > ~/.dockercfg
+    - docker build -t $MBED_BUILD_TAG .
+
+test:
+  override:        
+    - exit 0
+
+deployment:
+  production:
+    branch: master
+    commands:
+      - echo Pushing $MBED_BUILD_TAG to dockerhub
+      - docker push $MBED_BUILD_TAG
+      - curl -v -X POST https://circleci.com/api/v1/project/ARMmbed/mbed-studio/tree/master?circle-token=0c08dd9ca91e7b3c759fdea83611c58cc5afa28b

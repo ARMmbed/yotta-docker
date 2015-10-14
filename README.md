@@ -1,8 +1,10 @@
-# yocker
+## yocker
+
+[![Circle CI](https://circleci.com/gh/ARMmbed/yocker.svg?style=shield&circle-token=29f7822201a28674e78f1c36b24f5fe2e01fe019)](https://circleci.com/gh/ARMmbed/yocker)
 
 The yotta Docker image
 
-## Prerequisites
+### Prerequisites
 
 [Docker](https://www.docker.com/)
 
