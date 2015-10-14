@@ -30,18 +30,4 @@ The run helper script accepts a path to mount as the workspace (defaults to `$HO
 
 The ```yotta``` file offers a proxy command to run yotta commands inside the yocker container from your working directory without explicitly opening a docker shell. This means you can execute yotta commands as if yotta was installed on your host.
 
-To use it, change into your project working directory where you want to run yotta and simply execute the proxy with the arguments you need:
-
-```
-cd <your mbedos project directory>
-/<yocker directory>/yotta target frdm-k64f-gcc
-/<yocker directory>/yotta build
-```
-
-Adding the yotta command to your path or sym-linking it into your bin directory will remove the need supply the entire path to the proxy:
-
-```
-cd <your mbedos project directory>
-yotta target frdm-k64f-gcc
-yotta build
-```
+See [yotta](yotta.md) for more information.
