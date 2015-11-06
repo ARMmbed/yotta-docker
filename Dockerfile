@@ -33,4 +33,4 @@ RUN apt-get -y install python-dev libffi-dev libssl-dev libxml2-dev
 
 # ------------------------------------------------------------------------------
 # Install yotta
-RUN pip install -U pyopenssl ndg-httpsclient pyasn1 requests yotta
+RUN pip install -U pyopenssl ndg-httpsclient pyasn1 requests yotta==0.9.2
