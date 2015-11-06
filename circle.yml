@@ -8,7 +8,7 @@ machine:
 dependencies:
   override:
     - sed "s/<EMAIL>/$DOCKER_EMAIL/;s/<AUTH>/$DOCKER_AUTH/" < dockercfg.template > ~/.dockercfg
-    - docker build -t $MBED_BUILD_TAG .
+    - docker build --no-cache -t $MBED_BUILD_TAG .
     - docker tag -f $MBED_BUILD_TAG $MBED_BUILD:latest
 
 test:
