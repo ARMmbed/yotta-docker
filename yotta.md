@@ -23,11 +23,16 @@ To use it, change into your project directory where you want to run yotta and si
 ```
 git clone <mbedos project>
 cd <mbedos project>
-/<path containing proxy>/yotta target frdm-k64f-gcc
-/<path containing proxy>/yotta build
+<path to proxy yotta script> target frdm-k64f-gcc
+<path to proxy yotta script> build
 ```
 
 Adding the yotta proxy command to your path or sym-linking it into your bin directory will then remove the need to supply the entire path to the proxy command:
+
+```
+ln -s <path to proxy yotta script> /usr/local/bin/yotta
+```
+
 
 ```
 git clone <mbedos project>
