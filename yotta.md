@@ -14,7 +14,7 @@ The ```yotta``` bash script allows you to use the yotta Docker container as a dr
 docker pull mbed/yotta
 ```
 
-Copy the [yotta script](yotta) somewhere onto your machine, ensuring it is executable.
+Copy the [yotta script](yotta.sh) somewhere onto your machine, ensuring it is executable.
 
 ### Usage
 
