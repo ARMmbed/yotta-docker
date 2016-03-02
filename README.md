@@ -1,6 +1,6 @@
-## yocker
+## yotta Docker Image
 
-[![Circle CI](https://circleci.com/gh/ARMmbed/yocker.svg?style=shield&circle-token=29f7822201a28674e78f1c36b24f5fe2e01fe019)](https://circleci.com/gh/ARMmbed/yocker)
+[![Circle CI](https://circleci.com/gh/ARMmbed/yotta-docker.svg?style=shield&circle-token=29f7822201a28674e78f1c36b24f5fe2e01fe019)](https://circleci.com/gh/ARMmbed/yotta-docker)
 
 The yotta Docker image
 
@@ -28,6 +28,6 @@ The run helper script accepts a path to mount as the workspace (defaults to `$HO
 
 ### Yotta proxy
 
-The ```yotta``` file offers a proxy command to run yotta commands inside the yocker container from your working directory without explicitly opening a docker shell. This means you can execute yotta commands as if yotta was installed on your host.
+The ```yotta``` file offers a proxy command to run yotta commands inside the yotta docker container from your working directory without explicitly opening a docker shell. This means you can execute yotta commands as if yotta was installed on your host.
 
 See [yotta](yotta.md) for more information.

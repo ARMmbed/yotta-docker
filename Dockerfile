@@ -16,10 +16,9 @@ RUN apt-get -y install build-essential cmake ninja-build clang-3.5
 # ------------------------------------------------------------------------------
 # Install arm gcc
 RUN apt-get -y install software-properties-common && \
-	add-apt-repository -y ppa:terry.guo/gcc-arm-embedded && \
+	add-apt-repository -y ppa:team-gcc-arm-embedded/ppa && \
 	apt-get -y update && \
-	echo -e "Explanation: get gcc-arm-none-eabi from ppa\nPackage: gcc-arm-none-eabi\nPin: origin \"ppa.launchpad.net\"\nPin-Priority: 1001" >> /etc/apt/preferences.d/gcc-arm-none-eabi && \
-	apt-get -y install gcc-arm-none-eabi
+	apt-get -y install gcc-arm-embedded
 
 # ------------------------------------------------------------------------------
 # Install python
@@ -33,4 +32,4 @@ RUN apt-get -y install python-dev libffi-dev libssl-dev libxml2-dev
 
 # ------------------------------------------------------------------------------
 # Install yotta
-RUN pip install -U pyopenssl ndg-httpsclient pyasn1 requests yotta==0.12.2
+RUN pip install -U pyopenssl ndg-httpsclient pyasn1 requests yotta==0.14.1
