@@ -10,8 +10,8 @@ The ```yotta``` bash script allows you to use the yotta Docker container as a dr
 
 ### Installataion
 
-```
-docker pull mbed/yotta
+```bash
+> docker pull mbed/yotta
 ```
 
 Copy the [yotta script](yotta.sh) somewhere onto your machine, ensuring it is executable.
@@ -20,23 +20,22 @@ Copy the [yotta script](yotta.sh) somewhere onto your machine, ensuring it is ex
 
 To use it, change into your project directory where you want to run yotta and simply execute the proxy command with the arguments you need. For example:
 
-```
-git clone <mbedos project>
-cd <mbedos project>
-<path to proxy yotta script> target frdm-k64f-gcc
-<path to proxy yotta script> build
+```bash
+> git clone <mbedos project>
+> cd <mbedos project>
+> <path to proxy yotta script> target frdm-k64f-gcc
+> <path to proxy yotta script> build
 ```
 
 Adding the yotta proxy command to your path or sym-linking it into your bin directory will then remove the need to supply the entire path to the proxy command:
 
-```
-ln -s <path to proxy yotta script> /usr/local/bin/yotta
+```bash
+> ln -s <path to proxy yotta script> /usr/local/bin/yotta
 ```
 
-
-```
-git clone <mbedos project>
-cd <mbedos project>
-yotta target frdm-k64f-gcc
-yotta build
+```bash
+> git clone <mbedos project>
+> cd <mbedos project>
+> yotta target frdm-k64f-gcc
+> yotta build
 ```
