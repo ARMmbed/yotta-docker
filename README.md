@@ -1,6 +1,6 @@
 ## yotta Docker Image
 
-[![Circle CI](https://circleci.com/gh/ARMmbed/yotta-docker.svg?style=shield&circle-token=29f7822201a28674e78f1c36b24f5fe2e01fe019)](https://circleci.com/gh/ARMmbed/yotta-docker)
+[![Circle CI](https://circleci.com/gh/ARMmbed/yotta-docker.svg?style=shield)](https://circleci.com/gh/ARMmbed/yotta-docker)
 
 The yotta Docker image
 
