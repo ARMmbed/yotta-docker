@@ -30,4 +30,4 @@ The run helper script accepts a path to mount as the workspace (defaults to `$HO
 
 The ```yotta``` file offers a proxy command to run yotta commands inside the yotta docker container from your working directory without explicitly opening a docker shell. This means you can execute yotta commands as if yotta was installed on your host.
 
-See [yotta](yotta.md) for more information.
+See [yotta.md](yotta.md) for more information.
