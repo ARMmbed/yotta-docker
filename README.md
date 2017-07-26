@@ -14,15 +14,11 @@ The yotta Docker image
 wget https://raw.githubusercontent.com/ARMmbed/yotta-docker/master/yotta.sh -O - | sudo tee /usr/local/bin/yotta && sudo chmod +x /usr/local/bin/yotta
 ```
 
-### Build the docker image
+### Yotta proxy
 
-The helper script ```docker-build``` will create your image. You can pass any extra docker commands into the helper such as ```--no-cache```.
+The ```yotta``` file offers a proxy command to run yotta commands inside the yotta docker container from your working directory without explicitly opening a docker shell. This means you can execute yotta commands as if yotta was installed on your host.
 
-```
-./docker-build.sh <docker-commands>
-```
-
-This generates an image named ```mbed/yotta```.
+See [yotta.md](yotta.md) for more information.
 
 ### Running the docker container
 
@@ -32,8 +28,12 @@ The run helper script accepts a path to mount as the workspace (defaults to `$HO
 ./docker-run.sh <path>
 ```
 
-### Yotta proxy
+### Build the docker image
 
-The ```yotta``` file offers a proxy command to run yotta commands inside the yotta docker container from your working directory without explicitly opening a docker shell. This means you can execute yotta commands as if yotta was installed on your host.
+The helper script ```docker-build``` will create your image. You can pass any extra docker commands into the helper such as ```--no-cache```.
 
-See [yotta.md](yotta.md) for more information.
+```
+./docker-build.sh <docker-commands>
+```
+
+This generates an image named ```mbed/yotta```.
