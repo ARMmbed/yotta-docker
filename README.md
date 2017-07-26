@@ -8,6 +8,12 @@ The yotta Docker image
 
 [Docker](https://www.docker.com/)
 
+### TL;DR
+
+```
+wget https://raw.githubusercontent.com/ARMmbed/yotta-docker/master/yotta.sh -O - | sudo tee /usr/local/bin/yotta && sudo chmod +x /usr/local/bin/yotta
+```
+
 ### Build the docker image
 
 The helper script ```docker-build``` will create your image. You can pass any extra docker commands into the helper such as ```--no-cache```.
